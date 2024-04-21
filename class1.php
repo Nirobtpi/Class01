@@ -26,7 +26,7 @@ class Furits{
     }
 
     function getFutites(){
-        return 'This Is An '. $this->name . ' It is '. $this->color ." Its Weght " . $this->wight;
+        return 'This Is An '. $this->name . ' It is '. $this->color ." Its Wight " . $this->wight;
     }
 }
 $furits=new Furits();
@@ -34,5 +34,23 @@ $furits->setName("Apple");
 $furits->setColor("Red");
 $furits->setWight("1Kg");
 echo $furits->getFutites();
+echo "<br>";
 
+class Email{
+    private $email;
+
+    function setMail($email){
+       return $this->email=$email;
+    }
+    function getMail(){
+        if(!filter_var($this->email,FILTER_VALIDATE_EMAIL)){
+            echo "Enter A Valid Email";
+        }else{
+            echo strtolower($this->email);
+        }
+    }
+}
+$email= new Email();
+$email->setMail('nirob@Gmail.com');
+echo $email->getMail();
 ?>
