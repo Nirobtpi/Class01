@@ -21,14 +21,14 @@ class Vichel{
 // $vichel=new Vichel('Bus','Red');
 
 class Bus extends Vichel{
-    // public $capacity;
+    public $id;
     public function  capacity($capacity){
-        parent::capacity($capacity);
+        echo parent::capacity($capacity);
         return $this->capacity=$capacity;
     }
 }
 $bus=new Bus("Bus",'Red');
 echo $bus->capacity('50');
-echo $bus->capacity(5);
+// echo $bus->capacity();
 
 ?>
