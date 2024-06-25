@@ -20,13 +20,13 @@ class Vehicle{
         return self::$capacity;
     }
 }
-class Bus extends Vehicle{
+class Buses extends Vehicle{
 
     function bus(){
       return  parent::$name;
     }
 }
-$bus= new Bus;
+$bus= new Buses;
 echo "<br>";
 echo $bus->bus();
 
