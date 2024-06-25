@@ -8,10 +8,15 @@ class Cars{
 
 $newObj=new Cars;
 echo $newObj->color;
+echo "<br>";
 
 
 class Human{
    public $name;
+
+   public function __construct($name){
+      $this->name=$name;
+   }
    function sayHi(){
       echo "Salam";
    }
@@ -23,8 +28,9 @@ class Human{
    }
 }
 
-$human=new Human;
+$human=new Human('Nur Alam Nirob');
 echo $human->sayHi();
-$human->setName('Nur Alam Nirob');
+// $human->setName('Nur Alam Nirob');
 echo "<br>";
 echo $human->sayName();
+echo '<br>';
