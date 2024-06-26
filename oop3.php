@@ -24,7 +24,7 @@ echo $fund->addFund(500);
 echo "<br>";
 echo $fund->deductFund(300);
 echo "<br>";
-echo $fund->fund;
+// echo $fund->fund;
 
 
 
