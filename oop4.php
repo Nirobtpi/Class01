@@ -24,5 +24,12 @@ class ChildClass extends PrantClass{
 $cc=new ChildClass('Saba');
 // echo $cc->sayHi();
 
+function celsiusToFahrenheit($celsius){
+    $fahrenhite=($celsius * 9/5);
+
+    return $celsius . " degrees Celsius is equal to " . $fahrenhite . " degrees Fahrenheit.";
+}
+
+echo $result= celsiusToFahrenheit(25);
 
 
