@@ -34,4 +34,13 @@ if($year % 400 ==0){
     $leapYear="No leap Year";
 }
 echo $leapYear;
+
+$arr=[12,35,36,14,15,18];
+$val=$arr;
+ rsort($val);
+
+foreach($val as $ar){
+    echo $ar;
+}
+
 ?>
