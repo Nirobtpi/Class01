@@ -1,3 +1,2 @@
 <?php
-$car->setColor('Green');
-// $car->getColor();
+25

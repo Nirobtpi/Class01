@@ -32,4 +32,20 @@ class Bus{
 $bus=new Bus();
 
 
+class sayName{
+    private $name;
+
+    function __construct($name){
+        $this->name=$name;
+    }
+
+    function Name(){
+        echo $this->name;
+    }
+}
+
+$name=new sayName('    Nirob');
+$name->Name();
+
+
 ?>
