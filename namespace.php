@@ -14,7 +14,7 @@ class Saba implements Passport{
 
     }
 }
-$saba=new Saba;
+$saba=new Saba();
 echo "<br>";
 $saba->name();
 ?>
