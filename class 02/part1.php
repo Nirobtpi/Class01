@@ -1,5 +1,9 @@
 <?php 
 
+session_start();
+$user_id=['nirob',10,2020];
+ $_SESSION['user_id']=$user_id;
+
 class Car{
     private $color;
 

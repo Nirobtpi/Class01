@@ -1,4 +1,8 @@
 <?php 
+require_once('part1.php');
+// session_start();
+print_r($user_id);
+
 class Rectangle{
     private $length;
     private $width;
@@ -97,6 +101,7 @@ class student{
 echo "\n";
 $student=new Student('Nirob',2,25);
 $student->getInformation();
+
 
 
 
